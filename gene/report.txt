@@ -1,0 +1,55 @@
+Gene_data.csv
+-----------------------------
+contains 30 samples with 22411 features
+
+meta_data.csv
+-----------------------------
+contains 30 samples
+
+Aim
+----------------------------------------------------
+Feature extraction on Gene data analysis which contains 22411 features using prinicipal component analysis.
+In this assignment I extracted two prinicipal components(PC1 & PC2) to visualize the gene data
+
+
+Prinicipal component Analysis
+-----------------------------------------------------
+The main idea of principal component analysis (PCA) is to reduce the dimensionality of a data set consisting of many variables correlated with each other, either heavily or lightly, while retaining the variation present in the dataset, up to the maximum extent. The same is done by transforming the variables to a new set of variables, which are known as the principal components (or simply, the PCs) and are orthogonal, ordered such that the retention of variation present in the original variables decreases as we move down in the order. So, in this way, the 1st principal component retains maximum variation that was present in the original components. The principal components are the eigenvectors of a covariance matrix, and hence they are orthogonal.
+
+
+
+
+
+
+Result
+----------------------------------
+the principal components we got after reduction has
+Explained variance: [3145.89499456 1995.86159606]
+Explained variance ratio: [0.20147289 0.12782118]
+
+Model used for predicting values: RandomForestClassifier
+
+Actual-cluster         predicted-cluster
+    4                              4
+    7                              7
+    9                              12
+    0                              0
+    11                             11
+    4                              4
+    8                              8
+    11                             11
+    12                             12
+
+
+
+
+Conclusion
+-----------------------------------------------------------
+PC1 and PC2 are contributing more than 30% of variance of dataset
+
+remaining 22409 dimension are contributing remaining 60% of variance of dataset
+
+After feature extraction using PCA.We visualized the dataset of containg PC1,PC2 and target variable.
+
+still genes of similar groups formed clusters and from this we can say that whole dataset can be analysed with PC1 and PC2 
+
